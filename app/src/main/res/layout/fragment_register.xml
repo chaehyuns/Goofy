@@ -7,14 +7,14 @@
     <data>
         <variable
             name="kakaoRegisterViewModel"
-            type="com.groom3.goofy.KakaoAuthViewModel"
+            type="com.groom3.goofy.onboard.KakaoAuthViewModel"
             />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".RegisterFragment">
+        tools:context=".onboard.RegisterFragment">
 
         <TextView
             android:id="@+id/intro_text"

@@ -1,4 +1,4 @@
-package com.groom3.goofy
+package com.groom3.goofy.onboard
 
 import android.os.Bundle
 import android.util.Log
@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.findNavController
+import com.groom3.goofy.R
 import com.groom3.goofy.databinding.FragmentRegisterBinding
 
 class RegisterFragment : Fragment() {
@@ -21,7 +21,7 @@ class RegisterFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = DataBindingUtil.inflate(inflater,R.layout.fragment_register,container,false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_register,container,false)
         kakaoAuthViewModel = ViewModelProvider(this).get(KakaoAuthViewModel::class.java)
         binding.kakaoRegisterViewModel = kakaoAuthViewModel
         binding.kakaoRegisterButton.setOnClickListener{

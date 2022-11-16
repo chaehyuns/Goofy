@@ -1,4 +1,4 @@
-package com.groom3.goofy
+package com.groom3.goofy.onboard
 
 import android.app.Application
 import android.content.ContentValues
