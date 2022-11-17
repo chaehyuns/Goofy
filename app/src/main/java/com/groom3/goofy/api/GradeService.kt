@@ -7,10 +7,8 @@ import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface GradeService {
-
-
     @GET("/wave-grade")
     suspend fun getGrade(
-        @Query("spotCode") spotCode : Int
+        @Query("SpotCode") spotCode : Int
     ) : Response<Grade>
 }

@@ -7,24 +7,25 @@
         tools:context=".onboard.OnboardFragment"
         android:orientation="vertical">
 
-
-        <TextView
-            android:id="@+id/description_text"
-            android:layout_width="match_parent"
-            android:layout_height="155dp"
-            android:gravity="center|top"
-            android:lineSpacingMultiplier="1.4"
-            android:text="푸시알림으로\n많은 사람에게 나의 말을\n 전해보세요"
-            android:textColor="@color/black"
-            android:textSize="25sp" />
-
         <ImageView
             android:id="@+id/onboard_img"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="300dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="30dp"
             android:src="@drawable/onboardimg" />
+
+
+        <TextView
+            android:id="@+id/description_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:text="해파리 등 위험한 해양생물의 출몰지역과\n
+            시기를 알아보고 입수해야 합니다."
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
     </LinearLayout>
 </layout>
