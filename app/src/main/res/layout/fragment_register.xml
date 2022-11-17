@@ -9,7 +9,15 @@
             name="kakaoRegisterViewModel"
             type="com.groom3.goofy.onboard.KakaoAuthViewModel"
             />
+
+
+        <variable
+            name="UserViewModel"
+            type="com.groom3.goofy.db.UserViewModel" />
     </data>
+
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
