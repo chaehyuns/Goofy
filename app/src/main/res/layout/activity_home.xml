@@ -13,16 +13,16 @@
         <fragment
             android:id="@+id/fragmentA"
             android:name="com.groom3.goofy.home.MapFragment"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             tools:layout="@layout/fragment_map" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/main_bnv"
-            android:layout_width="360dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:itemIconSize="20dp"
+            app:itemIconSize="40dp"
             app:itemIconTint="@drawable/btm_color_selector"
             app:itemTextColor="@drawable/btm_color_selector"
             app:labelVisibilityMode="labeled"
@@ -30,13 +30,20 @@
             app:layout_constraintStart_toStartOf="parent"
             app:menu="@menu/bottom_nav_menu" />
 
-        <fragment
-            android:id="@+id/fragmentB"
-            android:name="com.groom3.goofy.home.TechCardFragment"
+        <FrameLayout
+            android:id="@+id/techCard_frm"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            tools:layout="@layout/fragment_tech_card" />
+            android:layout_height="300dp"
+            android:layout_above="@+id/navigation_division"
+            android:layout_below="@+id/toolbar_division" />
+
+<!--        <fragment-->
+<!--            android:id="@+id/fragmentB"-->
+<!--            android:name="com.groom3.goofy.home.TechCardFragment"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            tools:layout="@layout/fragment_tech_card" />-->
 
     </LinearLayout>
 </layout>

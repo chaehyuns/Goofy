@@ -4,29 +4,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/homeFragment"
-        android:icon="@drawable/ic_bottom_home_no_select"
+        android:icon="@drawable/main_btm_lv1_selector"
         app:showAsAction="always"
         android:enabled="true"
-        android:title="입문"
+        android:title=""
         tools:ignore="AlwaysShowAction" />
     <item
         android:id="@+id/lookFragment"
-        android:icon="@drawable/ic_bottom_look_no_select"
+        android:icon="@drawable/main_btm_lv2_selector"
         app:showAsAction="always"
-        android:title="초급" />
+        android:title="" />
     <item
         android:id="@+id/searchFragment"
-        android:icon="@drawable/ic_bottom_search_no_select"
+        android:icon="@drawable/main_btm_lv3_selector"
         app:showAsAction="always"
-        android:title="중급" />
+        android:title="" />
     <item
         android:id="@+id/lockerFragment"
-        android:icon="@drawable/ic_bottom_locker_no_select"
+        android:icon="@drawable/main_btm_lv4_selector"
         app:showAsAction="always"
-        android:title="고급" />
+        android:title="" />
     <item
         android:id="@+id/emptyFragment"
         app:showAsAction="always"
         android:title="" />
+
 
 </menu>
