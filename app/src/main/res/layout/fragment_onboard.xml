@@ -46,15 +46,15 @@
             app:layout_constraintTop_toBottomOf="@id/indicators_container"
             app:layout_constraintBottom_toTopOf="@id/start_text"/>
 
-<Button
+<TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:id="@+id/start_text"
     android:gravity="center"
     android:backgroundTint="#aaaaaa"
-    android:text=" 바로 시작할래요! "
+    android:text=" 바로 시작하기 "
     android:layout_marginBottom="30dp"
-    android:background="@drawable/edittext_border"
+
     android:textSize="20dp"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintTop_toBottomOf="@id/intro_viewpager"

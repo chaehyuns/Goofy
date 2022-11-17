@@ -2,6 +2,7 @@ package com.groom3.goofy.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import com.groom3.goofy.R
 import com.groom3.goofy.databinding.ActivityHomeBinding
@@ -43,6 +44,20 @@ class HomeActivity : AppCompatActivity() {
                 }
             }
             true
+        }
+    }
+     var time : Long = 0
+
+    override fun onBackPressed() {
+
+        if(System.currentTimeMillis()-time>=1500) {
+            time=System.currentTimeMillis();
+            Toast.makeText(getApplicationContext(),"뒤로 가기 버튼을 한 번 더 누르면 종료됩니다.", Toast.LENGTH_SHORT).show();
+        }
+        else if(System.currentTimeMillis()-time<1500){ // 뒤로 가기 한번 더 눌렀을때의 시간간격 텀이 1초
+            finishAffinity();
+            System.runFinalization();
+            System.exit(0);
         }
     }
 }
