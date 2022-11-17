@@ -30,6 +30,7 @@ class RegisterFragment : Fragment() {
 
         kakaoAuthViewModel.accessToken.observe(viewLifecycleOwner) {
             Log.d("MYTAG", "token is ${it}")
+
         }
         return binding.root
 

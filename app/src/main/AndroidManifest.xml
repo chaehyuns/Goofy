@@ -2,10 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".onboard.GlobalApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -14,8 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Goofy"
-        tools:targetApi="31"
-        android:name=".onboard.GlobalApplication">
+        tools:targetApi="31">
+        <activity
+            android:name=".home.HomeActivity"
+            android:exported="false" />
         <activity
             android:name=".onboard.MainActivity"
             android:exported="true">
@@ -29,26 +31,25 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <!-- Redirect URI: "kakao${NATIVE_APP_KEY}://oauth" -->
-                <data android:host="oauth"
+                <data
+                    android:host="oauth"
                     android:scheme="kakao8855edea7e857b1d74255151a86d8477" />
             </intent-filter>
         </activity>
 
         <meta-data
             android:name="com.kakao.sdk.AppKey"
-            android:value="8855edea7e857b1d74255151a86d8477"/>
-
-
+            android:value="8855edea7e857b1d74255151a86d8477" />
     </application>
 
 </manifest>
