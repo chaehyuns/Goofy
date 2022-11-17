@@ -8,13 +8,23 @@
         <entry key="app/src/main/res/drawable/button_background_black_color.xml" value="0.1715" />
         <entry key="app/src/main/res/drawable/button_background_flo_color.xml" value="0.1715" />
         <entry key="app/src/main/res/drawable/button_background_white_color.xml" value="0.1715" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.29343872070312493" />
+        <entry key="app/src/main/res/drawable/main_btm_color_selector.xml" value="0.1905" />
+        <entry key="app/src/main/res/drawable/main_btm_home_selector.xml" value="0.1905" />
+        <entry key="app/src/main/res/drawable/main_btm_look_selector.xml" value="0.1905" />
+        <entry key="app/src/main/res/drawable/main_btm_my_selector.xml" value="0.1905" />
+        <entry key="app/src/main/res/drawable/main_btm_search_selector.xml" value="0.1905" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.38183135986328126" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/fragment_lv1.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_lv2.xml" value="0.31927083333333334" />
+        <entry key="app/src/main/res/layout/fragment_lv3.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/fragment_lv4.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/fragment_map.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_onboard.xml" value="0.25052083333333336" />
         <entry key="app/src/main/res/layout/fragment_register.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/fragment_tech_card.xml" value="0.31927083333333334" />
-        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.3397608439127605" />
+        <entry key="app/src/main/res/layout/techcard_lv1_layout.xml" value="0.15" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.375" />
       </map>
     </option>
   </component>
