@@ -13,7 +13,7 @@
         <fragment
             android:id="@+id/fragmentA"
             android:name="com.groom3.goofy.home.MapFragment"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             tools:layout="@layout/fragment_map" />
@@ -33,7 +33,7 @@
         <FrameLayout
             android:id="@+id/techCard_frm"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="200dp"
             android:layout_above="@+id/navigation_division"
             android:layout_below="@+id/toolbar_division" />
 
