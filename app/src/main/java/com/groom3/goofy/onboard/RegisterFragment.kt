@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
-import androidx.room.Room
 import com.groom3.goofy.R
 import com.groom3.goofy.databinding.FragmentRegisterBinding
 import com.groom3.goofy.db.*

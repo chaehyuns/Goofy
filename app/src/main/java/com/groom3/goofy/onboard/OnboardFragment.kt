@@ -30,9 +30,7 @@ class OnboardFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_onboard,container,false)
 //
-        if(userViewModel.users == null){
 
-        }
 
         binding.introViewpager.adapter = onboardAdapter
         binding.springDotsIndicator.attachTo(binding.introViewpager)
