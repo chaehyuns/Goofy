@@ -1,5 +1,6 @@
 package com.groom3.goofy.onboard
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -28,10 +29,17 @@ class OnboardFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_onboard,container,false)
+//
+
+
         binding.introViewpager.adapter = onboardAdapter
         binding.springDotsIndicator.attachTo(binding.introViewpager)
         binding.startText.setOnClickListener{
-            it.findNavController().navigate(R.id.action_onboardFragment_to_registerFragment)
+            it.findNavController().navigate(R.id.action_onboardFragment_to_homeActivity)
+//            activity?.let{
+//                val intent = Intent(activity, HomeActivity::class.java)
+//                startActivity(intent)
+//            }
         }
         return binding.root
 

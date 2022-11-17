@@ -8,14 +8,22 @@
         tools:layout="@layout/fragment_onboard"
         android:id="@+id/onboardFragment"
         android:name="com.groom3.goofy.onboard.OnboardFragment"
-        android:label="OnboardFragment" >
+        android:label="OnboardFragment">
         <action
             android:id="@+id/action_onboardFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_onboardFragment_to_homeActivity"
+            app:destination="@id/homeActivity" />
     </fragment>
     <fragment
         tools:layout="@layout/fragment_register"
         android:id="@+id/registerFragment"
         android:name="com.groom3.goofy.onboard.RegisterFragment"
         android:label="RegisterFragment" />
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.groom3.goofy.home.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
 </navigation>

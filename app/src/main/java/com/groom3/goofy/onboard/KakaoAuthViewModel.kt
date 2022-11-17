@@ -12,7 +12,7 @@ class KakaoAuthViewModel(application: Application) : AndroidViewModel(applicatio
 
     private val context = application.applicationContext
     val accessToken = MutableLiveData<String?>()
-    val userEmail = MutableLiveData<String>()
+    val userEmail = MutableLiveData<String?>()
 
     fun handleKakaoLogin(){
         // 로그인 조합 예제
