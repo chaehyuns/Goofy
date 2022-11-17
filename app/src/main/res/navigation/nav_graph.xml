@@ -12,9 +12,6 @@
         <action
             android:id="@+id/action_onboardFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
-        <action
-            android:id="@+id/action_onboardFragment_to_homeActivity"
-            app:destination="@id/homeActivity" />
     </fragment>
     <fragment
         tools:layout="@layout/fragment_register"

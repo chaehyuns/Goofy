@@ -1,5 +1,6 @@
 package com.groom3.goofy.onboard
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -11,8 +12,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.groom3.goofy.R
 import com.groom3.goofy.databinding.FragmentRegisterBinding
 import com.groom3.goofy.db.*
-lateinit var userViewModel: UserViewModel
-
+import com.groom3.goofy.home.HomeActivity
 
 class RegisterFragment : Fragment() {
     private lateinit var binding : FragmentRegisterBinding
@@ -27,7 +27,7 @@ class RegisterFragment : Fragment() {
         val dao = UserDatabase.getInstance(requireContext()).userDAO
         val repository= UserRepository(dao)
         val factory = UserViewModelFactory(repository)
-        userViewModel = ViewModelProvider(this,factory).get(UserViewModel::class.java)
+        val userViewModel = ViewModelProvider(this,factory).get(UserViewModel::class.java)
         binding.kakaoRegisterViewModel = kakaoAuthViewModel
         binding.kakaoRegisterButton.setOnClickListener{
             kakaoAuthViewModel.handleKakaoLogin()
@@ -36,12 +36,13 @@ class RegisterFragment : Fragment() {
 
         kakaoAuthViewModel.accessToken.observe(viewLifecycleOwner) {
             Log.d("MYTAG", "token is ${it}")
+            val intent = Intent(activity, HomeActivity::class.java)
+            startActivity(intent)
 
         }
         kakaoAuthViewModel.userEmail.observe(viewLifecycleOwner){
             userViewModel.email = it!!
             userViewModel.insertUser()
-
 
         }
         return binding.root
