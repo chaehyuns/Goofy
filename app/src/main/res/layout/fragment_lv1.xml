@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home.lv1Fragment">
+    tools:context=".home.lv1Fragment"
+    android:background="#F2F3F7">
 
     <ScrollView
         android:id="@+id/bio_scroll"
@@ -19,12 +20,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:radius="20dp"
             android:padding="16dp">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/techcard"
+                android:src="@drawable/lv1_tc_01"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
                 />
@@ -32,38 +34,28 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/techcard2"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/lv1_tc_02"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
                 />
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/techcard"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/lv1_tc_03"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
                 />
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/techcard"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/lv1_tc_04"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
                 />
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/techcard"
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"
-                />
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/techcard"
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"
-                />
+
         </LinearLayout>
 
     </ScrollView>
