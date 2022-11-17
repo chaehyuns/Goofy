@@ -15,4 +15,5 @@ class UserRepository(private val dao : UserDAO) {
     suspend fun deleteAll() : Int {
         return dao.deleteAll()
     }
+
 }
