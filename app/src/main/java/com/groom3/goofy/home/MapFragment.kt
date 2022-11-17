@@ -56,14 +56,6 @@ class MapFragment : Fragment() {
                     binding.gradeDescription.text = "가지마"
                 }
 
-                val bundle = Bundle()
-                bundle.putString("key", "value")
-
-                val result = "result"
-                setFragmentResult("requestKey", bundleOf("bundleKey" to result))
-                parentFragmentManager.beginTransaction()
-                    .replace(com.groom3.goofy.R.id.fragmentA,TechCardFragment())
-                    .commit()
 
 
             })

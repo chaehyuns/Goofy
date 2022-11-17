@@ -24,10 +24,7 @@
         android:icon="@drawable/main_btm_lv4_selector"
         app:showAsAction="always"
         android:title="" />
-    <item
-        android:id="@+id/emptyFragment"
-        app:showAsAction="always"
-        android:title="" />
+
 
 
 </menu>
