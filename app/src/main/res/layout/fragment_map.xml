@@ -13,9 +13,10 @@
         android:id="@+id/beach_container"
         android:layout_width="328dp"
         android:layout_height="88dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/edittext_border"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -45,9 +46,9 @@
 
         <TextView
             android:id="@+id/wave_height"
-            android:layout_marginRight="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
             android:text="0.17m"
             app:layout_constraintEnd_toStartOf="@+id/wind_speed"
             app:layout_constraintTop_toTopOf="@+id/beach_name"></TextView>
@@ -74,10 +75,10 @@
             app:layout_constraintTop_toTopOf="@+id/beach_name"></TextView>
 
         <TextView
-            android:layout_marginRight="10dp"
             android:id="@+id/air_temp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
             android:text="기온 8c"
             app:layout_constraintEnd_toStartOf="@+id/water_temp"
             app:layout_constraintTop_toTopOf="@+id/grade_description"></TextView>
@@ -104,14 +105,13 @@
 
         <ImageView
             android:id="@+id/jeju_image"
-            android:layout_width="330dp"
-            android:layout_height="298dp"
+            android:layout_width="467dp"
+            android:layout_height="382dp"
             android:src="@drawable/jeju_map"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.493"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="0dp" />
+            tools:layout_editor_absoluteY="-67dp" />
 
         <Button
             android:id="@+id/beach_button_ten"
@@ -120,10 +120,10 @@
             android:background="@drawable/circle_background"
             app:layout_constraintBottom_toBottomOf="@id/jeju_image"
             app:layout_constraintEnd_toEndOf="@+id/jeju_image"
-            app:layout_constraintHorizontal_bias="0.419"
+            app:layout_constraintHorizontal_bias="0.415"
             app:layout_constraintStart_toStartOf="@+id/jeju_image"
             app:layout_constraintTop_toTopOf="@id/jeju_image"
-            app:layout_constraintVertical_bias="0.342"
+            app:layout_constraintVertical_bias="0.381"
             tools:ignore="MissingConstraints" />
 
         <Button
@@ -147,10 +147,10 @@
             android:background="@drawable/circle_background"
             app:layout_constraintBottom_toBottomOf="@id/jeju_image"
             app:layout_constraintEnd_toEndOf="@+id/jeju_image"
-            app:layout_constraintHorizontal_bias="0.546"
+            app:layout_constraintHorizontal_bias="0.539"
             app:layout_constraintStart_toStartOf="@+id/jeju_image"
             app:layout_constraintTop_toTopOf="@id/jeju_image"
-            app:layout_constraintVertical_bias="0.342"
+            app:layout_constraintVertical_bias="0.31"
             tools:ignore="MissingConstraints" />
 
         <Button
@@ -163,7 +163,7 @@
             app:layout_constraintHorizontal_bias="0.65"
             app:layout_constraintStart_toStartOf="@+id/jeju_image"
             app:layout_constraintTop_toTopOf="@id/jeju_image"
-            app:layout_constraintVertical_bias="0.289"
+            app:layout_constraintVertical_bias="0.3"
             tools:ignore="MissingConstraints" />
 
         <Button
@@ -173,10 +173,10 @@
             android:background="@drawable/circle_background"
             app:layout_constraintBottom_toBottomOf="@id/jeju_image"
             app:layout_constraintEnd_toEndOf="@+id/jeju_image"
-            app:layout_constraintHorizontal_bias="0.323"
+            app:layout_constraintHorizontal_bias="0.336"
             app:layout_constraintStart_toStartOf="@+id/jeju_image"
             app:layout_constraintTop_toTopOf="@id/jeju_image"
-            app:layout_constraintVertical_bias="0.395"
+            app:layout_constraintVertical_bias="0.419"
             tools:ignore="MissingConstraints" />
 
         <Button
@@ -186,10 +186,10 @@
             android:background="@drawable/circle_background"
             app:layout_constraintBottom_toBottomOf="@id/jeju_image"
             app:layout_constraintEnd_toEndOf="@+id/jeju_image"
-            app:layout_constraintHorizontal_bias="0.371"
+            app:layout_constraintHorizontal_bias="0.367"
             app:layout_constraintStart_toStartOf="@+id/jeju_image"
             app:layout_constraintTop_toTopOf="@id/jeju_image"
-            app:layout_constraintVertical_bias="0.713"
+            app:layout_constraintVertical_bias="0.694"
             tools:ignore="MissingConstraints" />
 
         <Button
@@ -238,10 +238,10 @@
             android:background="@drawable/circle_background"
             app:layout_constraintBottom_toBottomOf="@id/jeju_image"
             app:layout_constraintEnd_toEndOf="@+id/jeju_image"
-            app:layout_constraintHorizontal_bias="0.219"
+            app:layout_constraintHorizontal_bias="0.25"
             app:layout_constraintStart_toStartOf="@+id/jeju_image"
             app:layout_constraintTop_toTopOf="@id/jeju_image"
-            app:layout_constraintVertical_bias="0.501"
+            app:layout_constraintVertical_bias="0.523"
             tools:ignore="MissingConstraints" />
 
 
