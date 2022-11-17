@@ -5,8 +5,11 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.replace
+import androidx.fragment.app.setFragmentResult
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.liveData
@@ -52,6 +55,17 @@ class MapFragment : Fragment() {
                 }else if (waveGrade == "5"){
                     binding.gradeDescription.text = "가지마"
                 }
+
+                val bundle = Bundle()
+                bundle.putString("key", "value")
+
+                val result = "result"
+                setFragmentResult("requestKey", bundleOf("bundleKey" to result))
+                parentFragmentManager.beginTransaction()
+                    .replace(com.groom3.goofy.R.id.fragmentA,TechCardFragment())
+                    .commit()
+
+
             })
         }
 
