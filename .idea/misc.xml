@@ -1,45 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/drawable-v24/edittext_border.xml" value="0.1715" />
-        <entry key="app/src/main/res/drawable/btm_color_selector.xml" value="0.1705" />
-        <entry key="app/src/main/res/drawable/button_background_black_color.xml" value="0.1715" />
-        <entry key="app/src/main/res/drawable/button_background_flo_color.xml" value="0.1715" />
-        <entry key="app/src/main/res/drawable/button_background_white_color.xml" value="0.1715" />
-        <entry key="app/src/main/res/drawable/main_btm_color_selector.xml" value="0.1905" />
-        <entry key="app/src/main/res/drawable/main_btm_home_selector.xml" value="0.1905" />
-        <entry key="app/src/main/res/drawable/main_btm_look_selector.xml" value="0.1905" />
-        <entry key="app/src/main/res/drawable/main_btm_my_selector.xml" value="0.1905" />
-        <entry key="app/src/main/res/drawable/main_btm_search_selector.xml" value="0.1905" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.21843261718749996" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
-        <entry key="app/src/main/res/layout/fragment_lv1.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/fragment_lv2.xml" value="0.31927083333333334" />
+        <entry key="app/src/main/res/drawable-v24/edittext_border.xml" value="0.175" />
+        <entry key="app/src/main/res/drawable/btm_color_selector.xml" value="0.175" />
+        <entry key="app/src/main/res/font/app_font.xml" value="0.13333333333333333" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.2777777777777778" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.17135416666666667" />
+        <entry key="app/src/main/res/layout/fragment_lv1.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/fragment_lv2.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/fragment_lv3.xml" value="0.3333333333333333" />
-        <entry key="app/src/main/res/layout/fragment_lv4.xml" value="0.3333333333333333" />
-        <entry key="app/src/main/res/layout/fragment_map.xml" value="0.375" />
-        <entry key="app/src/main/res/layout/fragment_onboard.xml" value="0.25052083333333336" />
-        <entry key="app/src/main/res/layout/fragment_register.xml" value="0.3333333333333333" />
-        <entry key="app/src/main/res/layout/fragment_tech_card.xml" value="0.31927083333333334" />
-        <entry key="app/src/main/res/layout/techcard_lv1_layout.xml" value="0.15" />
-        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/fragment_lv4.xml" value="0.2777777777777778" />
+        <entry key="app/src/main/res/layout/fragment_map.xml" value="0.4626327514648437" />
+        <entry key="app/src/main/res/layout/fragment_onboard.xml" value="0.22870370370370371" />
+        <entry key="app/src/main/res/layout/fragment_register.xml" value="0.22870370370370371" />
+        <entry key="app/src/main/res/layout/fragment_tech_card.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/onboard_container.xml" value="0.22870370370370371" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.3333333333333333" />
       </map>
     </option>
   </component>
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
   </component>
-=======
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" default="true">
-    <output url="file://$PROJECT_DIR$/build/classes" />
-  </component>
->>>>>>> origin/main
 </project>

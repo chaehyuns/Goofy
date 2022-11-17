@@ -12,6 +12,11 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_home)
 
+        //Home Activity Navigation 초기화면 설정
+        supportFragmentManager.beginTransaction().add(R.id.techCard_frm,
+                    lv1Fragment()
+        ).commit()
+
         //Home Activity Navigation
         binding.mainBnv.setOnItemSelectedListener{ item ->
             when (item.itemId) {
