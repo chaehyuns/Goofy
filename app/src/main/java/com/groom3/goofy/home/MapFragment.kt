@@ -70,7 +70,7 @@ class MapFragment : Fragment() {
         }
 
         binding.beachButtonOne.setOnClickListener{
-            binding.beachButtonOne.setBackgroundResource(R.drawable.circle_gradeready)
+            //binding.beachButtonOne.setBackgroundResource(R.drawable.circle_gradeready)
             val responseLiveDataOne : LiveData<Response<Grade>> = liveData {
                 val response = retService.getGrade(4)
                 emit(response)
@@ -97,7 +97,7 @@ class MapFragment : Fragment() {
         }
 
         binding.beachButtonTwo.setOnClickListener {
-            binding.beachButtonTwo.setBackgroundResource(R.drawable.circle_gradeready)
+            //binding.beachButtonTwo.setBackgroundResource(R.drawable.circle_gradeready)
             val responseLiveDataTwo : LiveData<Response<Grade>> = liveData {
                 val response = retService.getGrade(7)
                 emit(response)
@@ -125,7 +125,7 @@ class MapFragment : Fragment() {
         }
 
         binding.beachButtonThree.setOnClickListener {
-            binding.beachButtonThree.setBackgroundResource(R.drawable.circle_gradeready)
+            //binding.beachButtonThree.setBackgroundResource(R.drawable.circle_gradeready)
 
             val responseLiveDataThree : LiveData<Response<Grade>> = liveData {
                 val response = retService.getGrade(9)
@@ -152,7 +152,7 @@ class MapFragment : Fragment() {
         }
 
         binding.beachButtonFour.setOnClickListener {
-            binding.beachButtonFour.setBackgroundResource(R.drawable.circle_gradeready)
+            //binding.beachButtonFour.setBackgroundResource(R.drawable.circle_gradeready)
 
             val responseLiveDataFour : LiveData<Response<Grade>> = liveData {
                 val response = retService.getGrade(5)
@@ -179,7 +179,7 @@ class MapFragment : Fragment() {
         }
 
         binding.beachButtonFive.setOnClickListener {
-            binding.beachButtonFive.setBackgroundResource(R.drawable.circle_gradeready)
+            //binding.beachButtonFive.setBackgroundResource(R.drawable.circle_gradeready)
 
             val responseLiveDataFive : LiveData<Response<Grade>> = liveData {
                 val response = retService.getGrade(6)
@@ -207,7 +207,7 @@ class MapFragment : Fragment() {
         }
 
         binding.beachButtonSix.setOnClickListener {
-            binding.beachButtonSix.setBackgroundResource(R.drawable.circle_gradeready)
+            //binding.beachButtonSix.setBackgroundResource(R.drawable.circle_gradeready)
 
             val responseLiveDataSix : LiveData<Response<Grade>> = liveData {
                 val response = retService.getGrade(0)
@@ -234,7 +234,7 @@ class MapFragment : Fragment() {
         }
 
         binding.beachButtonSeven.setOnClickListener {
-            binding.beachButtonSeven.setBackgroundResource(R.drawable.circle_gradeready)
+            //binding.beachButtonSeven.setBackgroundResource(R.drawable.circle_gradeready)
 
             val responseLiveDataSeven : LiveData<Response<Grade>> = liveData {
                 val response = retService.getGrade(8)
@@ -261,7 +261,7 @@ class MapFragment : Fragment() {
         }
 
         binding.beachButtonEight.setOnClickListener {
-            binding.beachButtonEight.setBackgroundResource(R.drawable.circle_gradeready)
+            //binding.beachButtonEight.setBackgroundResource(R.drawable.circle_gradeready)
 
             val responseLiveDataEight : LiveData<Response<Grade>> = liveData {
                 val response = retService.getGrade(1)
@@ -288,7 +288,7 @@ class MapFragment : Fragment() {
         }
 
         binding.beachButtonNine.setOnClickListener {
-            binding.beachButtonNine.setBackgroundResource(R.drawable.circle_gradeready)
+            //binding.beachButtonNine.setBackgroundResource(R.drawable.circle_gradeready)
 
             val responseLiveDataNine : LiveData<Response<Grade>> = liveData {
                 val response = retService.getGrade(2)
@@ -315,7 +315,7 @@ class MapFragment : Fragment() {
         }
 
         binding.beachButtonTen.setOnClickListener {
-            binding.beachButtonTen.setBackgroundResource(R.drawable.circle_gradeready)
+            //binding.beachButtonTen.setBackgroundResource(R.drawable.circle_gradeready)
             val responseLiveDataTen : LiveData<Response<Grade>> = liveData {
                 val response = retService.getGrade(3)
                 emit(response)

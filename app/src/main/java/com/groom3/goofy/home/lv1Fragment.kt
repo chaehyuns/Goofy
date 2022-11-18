@@ -1,26 +1,43 @@
 package com.groom3.goofy.home
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
 import com.groom3.goofy.R
+import com.groom3.goofy.databinding.FragmentLv1Binding
+import com.groom3.goofy.databinding.FragmentMapBinding
 
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
 class lv1Fragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private lateinit var binding: FragmentLv1Binding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_lv1, container, false)
+        binding = DataBindingUtil.inflate(inflater, com.groom3.goofy.R.layout.fragment_lv1,container,false)
+        binding.stanceButton.setOnClickListener{
+            val intent = Intent(activity, PaddlingActivity::class.java)
+                startActivity(intent)
+        }
+        binding.paddlingButton.setOnClickListener{
+            val intent = Intent(activity, PaddlingActivity::class.java)
+            startActivity(intent)
+        }
+        binding.popupButton.setOnClickListener{
+            val intent = Intent(activity, PaddlingActivity::class.java)
+            startActivity(intent)
+        }
+        binding.takeoffButton.setOnClickListener{
+            val intent = Intent(activity, PaddlingActivity::class.java)
+            startActivity(intent)
+        }
+        return binding.root
     }
 
 }
