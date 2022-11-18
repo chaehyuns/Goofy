@@ -1,5 +1,6 @@
 package com.groom3.goofy.home
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -15,6 +16,7 @@ import com.groom3.goofy.databinding.FragmentMapBinding
 class lv1Fragment : Fragment() {
     private lateinit var binding: FragmentLv1Binding
 
+    @SuppressLint("SuspiciousIndentation")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
