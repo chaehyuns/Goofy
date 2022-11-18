@@ -3,7 +3,8 @@ package com.groom3.goofy.onboard
 import android.app.Application
 import com.kakao.sdk.common.KakaoSdk
 
-class GlobalApplication : Application() {
+public class GlobalApplication : Application() {
+    public var applicationGrade : Int = 0
     companion object {
         var instance: GlobalApplication? = null
     }

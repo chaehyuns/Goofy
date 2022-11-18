@@ -7,18 +7,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".onboard.OnboardFragment"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/WHT02">
 
 
         <LinearLayout
             android:id="@+id/indicators_container"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="50dp"
             android:gravity="center"
             android:orientation="horizontal"
             app:layout_constraintBottom_toTopOf="@id/intro_viewpager"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="30dp"
             tools:layout_editor_absoluteX="-1dp">
 
 
@@ -46,20 +47,22 @@
             app:layout_constraintTop_toBottomOf="@id/indicators_container"
             app:layout_constraintBottom_toTopOf="@id/start_text"/>
 
-<Button
-    android:layout_width="wrap_content"
+<ImageView
+    android:layout_width="160dp"
     android:layout_height="wrap_content"
     android:id="@+id/start_text"
+    android:src="@drawable/onboard_button"
     android:gravity="center"
     android:backgroundTint="#aaaaaa"
-    android:text=" 바로 시작할래요! "
-    android:layout_marginBottom="30dp"
-    android:background="@drawable/edittext_border"
+    android:text=" 바로 시작하기 "
+    android:layout_marginBottom="20dp"
+
     android:textSize="20dp"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintTop_toBottomOf="@id/intro_viewpager"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent" />
+
 
 
 
