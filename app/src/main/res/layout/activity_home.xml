@@ -35,7 +35,7 @@
         <FrameLayout
             android:id="@+id/techCard_frm"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="380dp"
             android:layout_above="@+id/navigation_division"
             android:layout_below="@+id/toolbar_division" />
 

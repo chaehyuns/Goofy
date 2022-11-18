@@ -92,7 +92,7 @@ class MapFragment : Fragment() {
                 if (binding.gradeDescription.text == "고급용 파도"){
                     binding.beachButtonOne.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive)
                 }
-            }, 1500)
+            }, 1000)
 
         }
 
@@ -119,7 +119,7 @@ class MapFragment : Fragment() {
                 if (binding.gradeDescription.text == "고급용 파도"){
                     binding.beachButtonTwo.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive)
                 }
-            }, 1500)
+            }, 1000)
 
 
         }
@@ -148,7 +148,7 @@ class MapFragment : Fragment() {
                 if (binding.gradeDescription.text == "고급용 파도"){
                     binding.beachButtonThree.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive)
                 }
-            }, 1500)
+            }, 1000)
         }
 
         binding.beachButtonFour.setOnClickListener {
@@ -175,7 +175,7 @@ class MapFragment : Fragment() {
                 if (binding.gradeDescription.text == "고급용 파도"){
                     binding.beachButtonFour.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive)
                 }
-            }, 1500)
+            }, 1000)
         }
 
         binding.beachButtonFive.setOnClickListener {
@@ -203,7 +203,7 @@ class MapFragment : Fragment() {
                 if (binding.gradeDescription.text == "고급용 파도"){
                     binding.beachButtonFive.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive)
                 }
-            }, 1500)
+            }, 1000)
         }
 
         binding.beachButtonSix.setOnClickListener {
@@ -213,6 +213,8 @@ class MapFragment : Fragment() {
                 val response = retService.getGrade(0)
                 emit(response)
             }
+
+            liveDataOberserver(responseLiveDataSix,"중문달 해변")
 
             Handler().postDelayed(Runnable {
                 if (binding.gradeDescription.text == "패들링"){
@@ -230,7 +232,7 @@ class MapFragment : Fragment() {
                 if (binding.gradeDescription.text == "고급용 파도"){
                     binding.beachButtonSix.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive)
                 }
-            }, 1500)
+            }, 1000)
         }
 
         binding.beachButtonSeven.setOnClickListener {
@@ -257,7 +259,7 @@ class MapFragment : Fragment() {
                 if (binding.gradeDescription.text == "고급용 파도"){
                     binding.beachButtonSeven.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive)
                 }
-            }, 1500)
+            }, 1000)
         }
 
         binding.beachButtonEight.setOnClickListener {
@@ -284,7 +286,7 @@ class MapFragment : Fragment() {
                 if (binding.gradeDescription.text == "고급용 파도"){
                     binding.beachButtonEight.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive)
                 }
-            }, 1500)
+            }, 1000)
         }
 
         binding.beachButtonNine.setOnClickListener {
@@ -311,7 +313,7 @@ class MapFragment : Fragment() {
                 if (binding.gradeDescription.text == "고급용 파도"){
                     binding.beachButtonNine.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive)
                 }
-            }, 1500)
+            }, 1000)
         }
 
         binding.beachButtonTen.setOnClickListener {
@@ -338,7 +340,7 @@ class MapFragment : Fragment() {
                 if (binding.gradeDescription.text == "고급용 파도"){
                     binding.beachButtonTen.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive)
                 }
-            }, 1500)
+            }, 1000)
         }
 
         return binding.root

@@ -30,7 +30,7 @@ class OnboardFragment : Fragment() {
             OnboardData("파도가 좋을수록 암초가 많아요!\n" +
                     "처음 가는 해변에서는 조심합시다", R.drawable.onboard_img2),
             OnboardData("위험한 해양생물도 있어요!\n"+
-                    "출물지역과 시기를 확인해둡시다", R.drawable.onboard_img3),
+                    "출몰지역과 시기를 확인해둡시다", R.drawable.onboard_img3),
         )
     )
 
