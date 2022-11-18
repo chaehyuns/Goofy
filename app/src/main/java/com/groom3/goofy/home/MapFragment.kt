@@ -1,4 +1,5 @@
 package com.groom3.goofy.home
+import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
 import android.util.Log
@@ -22,15 +23,6 @@ import retrofit2.Response
 class MapFragment : Fragment() {
     private lateinit var binding: FragmentMapBinding
     var buttonOneClicked = true
-    var buttonTwoClicked = false
-    var buttonThreeClicked = false
-    var buttonFourClicked = false
-    var buttonFiveClicked = false
-    var buttonSixClicked = false
-    var buttonSevenClicked = false
-    var buttonEightClicked = false
-    var buttonNineClicked = false
-    var buttonTenClicked = false
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -54,71 +46,31 @@ class MapFragment : Fragment() {
                 binding.waterTemp.text = "수온 ${waterTemp}'c"
                 if (waveGrade =="1"){
                     binding.gradeDescription.text = "패들링"
+                    binding.gradeDescription.setBackgroundColor(Color.parseColor("#C0FFF7"))
                 }
                 else if (waveGrade == "2"){
                     binding.gradeDescription.text = "입문"
+                    binding.gradeDescription.setBackgroundColor(Color.parseColor("#6BE4E4"))
                 }
                 else if (waveGrade == "3"){
                     binding.gradeDescription.text = "초급용 파도"
+                    binding.gradeDescription.setBackgroundColor(Color.parseColor("#5790FF"))
+
                 }else if (waveGrade == "4"){
                     binding.gradeDescription.text = "중급용 파도"
+                    binding.gradeDescription.setBackgroundColor(Color.parseColor("#4062A5"))
+
                 }else if (waveGrade == "5"){
-                    binding.gradeDescription.text = "가지마 제발"
+                    binding.gradeDescription.text = "고급용 파도"
+                    binding.gradeDescription.setBackgroundColor(Color.parseColor("#173267"))
+
                 }
+
             })
         }
 
-        val responseLiveDataOne : LiveData<Response<Grade>> = liveData {
-            val response = retService.getGrade(4)
-            emit(response)
-        }
-        liveDataOberserver(responseLiveDataOne,"월정리 해변")
-        Handler().postDelayed(Runnable {
-            if (binding.gradeDescription.text == "패들링"){
-                if(buttonOneClicked) {
-                    binding.beachButtonOne.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradeone_stroke)
-                }
-                else{
-                    Log.d("MYTAG","setting button")
-                    binding.beachButtonOne.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradeone)
-                }
-            }
-            if (binding.gradeDescription.text == "입문"){
-                if(!buttonOneClicked) {
-                    binding.beachButtonOne.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradetwo)
-                }
-                else{
-                    binding.beachButtonOne.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradetwo_stroke)
-                }
-            }
-            if (binding.gradeDescription.text == "초급용 파도"){
-                if(!buttonOneClicked) {
-                    binding.beachButtonOne.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradethree)
-                }
-                else{
-                    binding.beachButtonOne.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradethree_stroke)
-                }
-            }
-            if (binding.gradeDescription.text == "중급용 파도"){
-                if(!buttonOneClicked) {
-                    binding.beachButtonOne.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefour)
-                }
-                else{
-                    binding.beachButtonOne.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefour_stroke)
-                }
-            }
-            if (binding.gradeDescription.text == "가지마 제발"){
-                if(!buttonOneClicked) {
-                    binding.beachButtonOne.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive)
-                }
-                else{
-                    binding.beachButtonOne.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive_stroke)
-                }
-            }
-        }, 500)
-
         binding.beachButtonOne.setOnClickListener{
-            buttonOneClicked = !buttonOneClicked
+            //binding.beachButtonOne.setBackgroundResource(R.drawable.circle_gradeready)
             val responseLiveDataOne : LiveData<Response<Grade>> = liveData {
                 val response = retService.getGrade(4)
                 emit(response)
@@ -137,7 +89,7 @@ class MapFragment : Fragment() {
                 if (binding.gradeDescription.text == "중급용 파도"){
                     binding.beachButtonOne.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefour)
                 }
-                if (binding.gradeDescription.text == "가지마 제발"){
+                if (binding.gradeDescription.text == "고급용 파도"){
                     binding.beachButtonOne.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive)
                 }
             }, 1500)
@@ -145,6 +97,7 @@ class MapFragment : Fragment() {
         }
 
         binding.beachButtonTwo.setOnClickListener {
+            //binding.beachButtonTwo.setBackgroundResource(R.drawable.circle_gradeready)
             val responseLiveDataTwo : LiveData<Response<Grade>> = liveData {
                 val response = retService.getGrade(7)
                 emit(response)
@@ -163,7 +116,7 @@ class MapFragment : Fragment() {
                 if (binding.gradeDescription.text == "중급용 파도"){
                     binding.beachButtonTwo.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefour)
                 }
-                if (binding.gradeDescription.text == "가지마 제발"){
+                if (binding.gradeDescription.text == "고급용 파도"){
                     binding.beachButtonTwo.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive)
                 }
             }, 1500)
@@ -172,6 +125,8 @@ class MapFragment : Fragment() {
         }
 
         binding.beachButtonThree.setOnClickListener {
+            //binding.beachButtonThree.setBackgroundResource(R.drawable.circle_gradeready)
+
             val responseLiveDataThree : LiveData<Response<Grade>> = liveData {
                 val response = retService.getGrade(9)
                 emit(response)
@@ -190,13 +145,15 @@ class MapFragment : Fragment() {
                 if (binding.gradeDescription.text == "중급용 파도"){
                     binding.beachButtonThree.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefour)
                 }
-                if (binding.gradeDescription.text == "가지마 제발"){
+                if (binding.gradeDescription.text == "고급용 파도"){
                     binding.beachButtonThree.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive)
                 }
             }, 1500)
         }
 
         binding.beachButtonFour.setOnClickListener {
+            //binding.beachButtonFour.setBackgroundResource(R.drawable.circle_gradeready)
+
             val responseLiveDataFour : LiveData<Response<Grade>> = liveData {
                 val response = retService.getGrade(5)
                 emit(response)
@@ -215,13 +172,15 @@ class MapFragment : Fragment() {
                 if (binding.gradeDescription.text == "중급용 파도"){
                     binding.beachButtonFour.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefour)
                 }
-                if (binding.gradeDescription.text == "가지마 제발"){
+                if (binding.gradeDescription.text == "고급용 파도"){
                     binding.beachButtonFour.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive)
                 }
             }, 1500)
         }
 
         binding.beachButtonFive.setOnClickListener {
+            //binding.beachButtonFive.setBackgroundResource(R.drawable.circle_gradeready)
+
             val responseLiveDataFive : LiveData<Response<Grade>> = liveData {
                 val response = retService.getGrade(6)
                 emit(response)
@@ -241,13 +200,15 @@ class MapFragment : Fragment() {
                 if (binding.gradeDescription.text == "중급용 파도"){
                     binding.beachButtonFive.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefour)
                 }
-                if (binding.gradeDescription.text == "가지마 제발"){
+                if (binding.gradeDescription.text == "고급용 파도"){
                     binding.beachButtonFive.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive)
                 }
             }, 1500)
         }
 
         binding.beachButtonSix.setOnClickListener {
+            //binding.beachButtonSix.setBackgroundResource(R.drawable.circle_gradeready)
+
             val responseLiveDataSix : LiveData<Response<Grade>> = liveData {
                 val response = retService.getGrade(0)
                 emit(response)
@@ -266,13 +227,15 @@ class MapFragment : Fragment() {
                 if (binding.gradeDescription.text == "중급용 파도"){
                     binding.beachButtonSix.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefour)
                 }
-                if (binding.gradeDescription.text == "가지마 제발"){
+                if (binding.gradeDescription.text == "고급용 파도"){
                     binding.beachButtonSix.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive)
                 }
             }, 1500)
         }
 
         binding.beachButtonSeven.setOnClickListener {
+            //binding.beachButtonSeven.setBackgroundResource(R.drawable.circle_gradeready)
+
             val responseLiveDataSeven : LiveData<Response<Grade>> = liveData {
                 val response = retService.getGrade(8)
                 emit(response)
@@ -291,13 +254,15 @@ class MapFragment : Fragment() {
                 if (binding.gradeDescription.text == "중급용 파도"){
                     binding.beachButtonSeven.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefour)
                 }
-                if (binding.gradeDescription.text == "가지마 제발"){
+                if (binding.gradeDescription.text == "고급용 파도"){
                     binding.beachButtonSeven.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive)
                 }
             }, 1500)
         }
 
         binding.beachButtonEight.setOnClickListener {
+            //binding.beachButtonEight.setBackgroundResource(R.drawable.circle_gradeready)
+
             val responseLiveDataEight : LiveData<Response<Grade>> = liveData {
                 val response = retService.getGrade(1)
                 emit(response)
@@ -316,13 +281,15 @@ class MapFragment : Fragment() {
                 if (binding.gradeDescription.text == "중급용 파도"){
                     binding.beachButtonEight.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefour)
                 }
-                if (binding.gradeDescription.text == "가지마 제발"){
+                if (binding.gradeDescription.text == "고급용 파도"){
                     binding.beachButtonEight.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive)
                 }
             }, 1500)
         }
 
         binding.beachButtonNine.setOnClickListener {
+            //binding.beachButtonNine.setBackgroundResource(R.drawable.circle_gradeready)
+
             val responseLiveDataNine : LiveData<Response<Grade>> = liveData {
                 val response = retService.getGrade(2)
                 emit(response)
@@ -341,13 +308,14 @@ class MapFragment : Fragment() {
                 if (binding.gradeDescription.text == "중급용 파도"){
                     binding.beachButtonNine.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefour)
                 }
-                if (binding.gradeDescription.text == "가지마 제발"){
+                if (binding.gradeDescription.text == "고급용 파도"){
                     binding.beachButtonNine.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive)
                 }
             }, 1500)
         }
 
         binding.beachButtonTen.setOnClickListener {
+            //binding.beachButtonTen.setBackgroundResource(R.drawable.circle_gradeready)
             val responseLiveDataTen : LiveData<Response<Grade>> = liveData {
                 val response = retService.getGrade(3)
                 emit(response)
@@ -367,7 +335,7 @@ class MapFragment : Fragment() {
                 if (binding.gradeDescription.text == "중급용 파도"){
                     binding.beachButtonTen.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefour)
                 }
-                if (binding.gradeDescription.text == "가지마 제발"){
+                if (binding.gradeDescription.text == "고급용 파도"){
                     binding.beachButtonTen.setBackgroundResource(com.groom3.goofy.R.drawable.circle_gradefive)
                 }
             }, 1500)

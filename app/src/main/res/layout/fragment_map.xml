@@ -3,250 +3,279 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".home.MapFragment"
-    android:background="#C8C8C8">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/beach_container"
-        android:layout_width="328dp"
-        android:layout_height="88dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/edittext_border"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/beach_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="제주 사계해변"
-            android:textColor="#000000"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.262" />
-
-        <TextView
-            android:id="@+id/grade_description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="패들링 연습"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/beach_name"
-            app:layout_constraintStart_toStartOf="@+id/beach_name"
-            app:layout_constraintTop_toBottomOf="@+id/beach_name" />
-
-
-        <TextView
-            android:id="@+id/wave_height"
-            android:layout_marginRight="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0.17m"
-            app:layout_constraintEnd_toStartOf="@+id/wind_speed"
-            app:layout_constraintTop_toTopOf="@+id/beach_name"></TextView>
-
-
-        <TextView
-            android:id="@+id/dash"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toBottomOf="@+id/wind_speed"
-            app:layout_constraintEnd_toStartOf="@+id/wind_speed"
-            app:layout_constraintStart_toEndOf="@+id/wave_height"
-            app:layout_constraintTop_toTopOf="@+id/wind_speed"></TextView>
-
-        <TextView
-            android:id="@+id/wind_speed"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
-            android:text="4.06s"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/beach_name"></TextView>
-
-        <TextView
-            android:layout_marginRight="10dp"
-            android:id="@+id/air_temp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="기온 8c"
-            app:layout_constraintEnd_toStartOf="@+id/water_temp"
-            app:layout_constraintTop_toTopOf="@+id/grade_description"></TextView>
-
-        <TextView
-            android:id="@+id/water_temp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
-            android:text="수온 18c"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/grade_description"></TextView>
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/beach_container">
+        android:layout_height="match_parent"
+        tools:context=".home.MapFragment"
+        android:background="#F2F3F7">
 
 
-        <ImageView
-            android:id="@+id/jeju_image"
-            android:layout_width="330dp"
-            android:layout_height="298dp"
-            android:src="@drawable/jeju_map"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/beach_container"
+            android:layout_width="328dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_border"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.493"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="0dp" />
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/beach_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="제주 사계해변"
+                android:textStyle="bold"
+                android:textColor="@color/BLK"
+                android:textSize="20dp"
+                android:fontFamily="@font/pretendardbold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.262" />
+
+            <TextView
+                android:id="@+id/grade_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="패들링 연습"
+                android:fontFamily="@font/pretendardbold"
+                android:textColor="@color/BLK"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/beach_name"
+                app:layout_constraintTop_toBottomOf="@+id/beach_name" />
+
+
+            <TextView
+                android:id="@+id/wave_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="0.17m"
+                android:textColor="@color/BLK"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/pretendardbold"
+                app:layout_constraintEnd_toStartOf="@+id/wind_speed"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintHorizontal_bias="0.01"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="-"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/wind_speed"
+                app:layout_constraintHorizontal_bias="0.521"
+                app:layout_constraintStart_toEndOf="@+id/wave_height"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/wind_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:textStyle="bold"
+                android:text="4.06s"
+                android:textColor="@color/BLK"
+                android:fontFamily="@font/pretendardbold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/beach_name"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/air_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/pretendardmedium"
+                android:text="기온 8c"
+                android:textColor="@color/BLK"
+                app:layout_constraintEnd_toStartOf="@+id/water_temp"
+                app:layout_constraintHorizontal_bias="0.987"
+                app:layout_constraintStart_toEndOf="@+id/grade_description"
+                app:layout_constraintTop_toTopOf="@+id/grade_description" />
+
+            <TextView
+                android:id="@+id/water_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/pretendardmedium"
+                android:text="수온 18c"
+                android:textColor="@color/BLK"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.992"
+                app:layout_constraintStart_toEndOf="@+id/grade_description"
+                app:layout_constraintTop_toTopOf="@+id/air_temp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/jeju_image"
+            android:layout_width="440dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/jeju_map"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/beach_button_ten"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
             android:background="@drawable/circle_background"
             app:layout_constraintBottom_toBottomOf="@id/jeju_image"
             app:layout_constraintEnd_toEndOf="@+id/jeju_image"
-            app:layout_constraintHorizontal_bias="0.419"
+            app:layout_constraintHorizontal_bias="0.4"
             app:layout_constraintStart_toStartOf="@+id/jeju_image"
             app:layout_constraintTop_toTopOf="@id/jeju_image"
-            app:layout_constraintVertical_bias="0.342"
+            app:layout_constraintVertical_bias="0.336"
             tools:ignore="MissingConstraints" />
 
         <Button
-            android:id="@+id/beach_button_three"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
-            android:background="@drawable/circle_background"
-            app:layout_constraintBottom_toBottomOf="@id/jeju_image"
-            app:layout_constraintEnd_toEndOf="@+id/jeju_image"
-            app:layout_constraintHorizontal_bias="0.749"
-            app:layout_constraintStart_toStartOf="@+id/jeju_image"
-            app:layout_constraintTop_toTopOf="@id/jeju_image"
-            app:layout_constraintVertical_bias="0.59"
-            tools:ignore="MissingConstraints" />
+                android:id="@+id/beach_button_three"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/circle_background"
+                app:layout_constraintBottom_toBottomOf="@id/jeju_image"
+                app:layout_constraintEnd_toEndOf="@+id/jeju_image"
+                app:layout_constraintHorizontal_bias="0.749"
+                app:layout_constraintStart_toStartOf="@+id/jeju_image"
+                app:layout_constraintTop_toTopOf="@id/jeju_image"
+                app:layout_constraintVertical_bias="0.59"
+                tools:ignore="MissingConstraints" />
 
 
         <Button
             android:id="@+id/beach_button_five"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
             android:background="@drawable/circle_background"
             app:layout_constraintBottom_toBottomOf="@id/jeju_image"
             app:layout_constraintEnd_toEndOf="@+id/jeju_image"
-            app:layout_constraintHorizontal_bias="0.546"
+            app:layout_constraintHorizontal_bias="0.536"
             app:layout_constraintStart_toStartOf="@+id/jeju_image"
             app:layout_constraintTop_toTopOf="@id/jeju_image"
-            app:layout_constraintVertical_bias="0.342"
+            app:layout_constraintVertical_bias="0.274"
             tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/beach_button_one"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
             android:background="@drawable/circle_background"
             app:layout_constraintBottom_toBottomOf="@id/jeju_image"
             app:layout_constraintEnd_toEndOf="@+id/jeju_image"
-            app:layout_constraintHorizontal_bias="0.65"
+            app:layout_constraintHorizontal_bias="0.658"
             app:layout_constraintStart_toStartOf="@+id/jeju_image"
             app:layout_constraintTop_toTopOf="@id/jeju_image"
-            app:layout_constraintVertical_bias="0.289"
+            app:layout_constraintVertical_bias="0.274"
             tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/beach_button_nine"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
+            android:layout_width="10dp"
+            android:layout_height="9dp"
             android:background="@drawable/circle_background"
             app:layout_constraintBottom_toBottomOf="@id/jeju_image"
             app:layout_constraintEnd_toEndOf="@+id/jeju_image"
-            app:layout_constraintHorizontal_bias="0.323"
+            app:layout_constraintHorizontal_bias="0.293"
             app:layout_constraintStart_toStartOf="@+id/jeju_image"
             app:layout_constraintTop_toTopOf="@id/jeju_image"
-            app:layout_constraintVertical_bias="0.395"
+            app:layout_constraintVertical_bias="0.396"
             tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/beach_button_eight"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
             android:background="@drawable/circle_background"
             app:layout_constraintBottom_toBottomOf="@id/jeju_image"
             app:layout_constraintEnd_toEndOf="@+id/jeju_image"
-            app:layout_constraintHorizontal_bias="0.371"
+            app:layout_constraintHorizontal_bias="0.312"
             app:layout_constraintStart_toStartOf="@+id/jeju_image"
             app:layout_constraintTop_toTopOf="@id/jeju_image"
-            app:layout_constraintVertical_bias="0.713"
+            app:layout_constraintVertical_bias="0.747"
             tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/beach_button_two"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
             android:background="@drawable/circle_background"
             app:layout_constraintBottom_toBottomOf="@id/jeju_image"
             app:layout_constraintEnd_toEndOf="@+id/jeju_image"
-            app:layout_constraintHorizontal_bias="0.771"
+            app:layout_constraintHorizontal_bias="0.809"
             app:layout_constraintStart_toStartOf="@+id/jeju_image"
             app:layout_constraintTop_toTopOf="@id/jeju_image"
-            app:layout_constraintVertical_bias="0.395"
+            app:layout_constraintVertical_bias="0.37"
             tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/beach_button_four"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
             android:background="@drawable/circle_background"
             app:layout_constraintBottom_toBottomOf="@id/jeju_image"
             app:layout_constraintEnd_toEndOf="@+id/jeju_image"
-            app:layout_constraintHorizontal_bias="0.574"
+            app:layout_constraintHorizontal_bias="0.601"
             app:layout_constraintStart_toStartOf="@+id/jeju_image"
             app:layout_constraintTop_toTopOf="@id/jeju_image"
-            app:layout_constraintVertical_bias="0.643"
+            app:layout_constraintVertical_bias="0.674"
             tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/beach_button_six"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
             android:background="@drawable/circle_background"
             app:layout_constraintBottom_toBottomOf="@id/jeju_image"
             app:layout_constraintEnd_toEndOf="@+id/jeju_image"
-            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintHorizontal_bias="0.452"
             app:layout_constraintStart_toStartOf="@+id/jeju_image"
             app:layout_constraintTop_toTopOf="@id/jeju_image"
-            app:layout_constraintVertical_bias="0.696"
+            app:layout_constraintVertical_bias="0.747"
             tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/beach_button_seven"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
             android:background="@drawable/circle_background"
             app:layout_constraintBottom_toBottomOf="@id/jeju_image"
             app:layout_constraintEnd_toEndOf="@+id/jeju_image"
-            app:layout_constraintHorizontal_bias="0.219"
+            app:layout_constraintHorizontal_bias="0.207"
             app:layout_constraintStart_toStartOf="@+id/jeju_image"
             app:layout_constraintTop_toTopOf="@id/jeju_image"
-            app:layout_constraintVertical_bias="0.501"
+            app:layout_constraintVertical_bias="0.51"
             tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="300dp"
+            android:src="@drawable/group"
+            app:layout_constraintBottom_toBottomOf="@id/jeju_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/beach_container" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

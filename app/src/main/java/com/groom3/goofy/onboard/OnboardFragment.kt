@@ -25,11 +25,12 @@ class OnboardFragment : Fragment() {
     private lateinit var binding : FragmentOnboardBinding
     private val onboardAdapter = OnboardAdapter(
         listOf(
-            OnboardData("푸시알림으로\n많은 사람에게 나의 말을\n전해보세요", R.drawable.onboardimg),
-            OnboardData("친구를 초대하고\n같은 관심사를 가진\n그룹을 만들어요", R.drawable.onboardimg),
-            OnboardData("이모지를 남기고\n푸시알림에\n생각을 표현해보세요", R.drawable.onboardimg),
-            OnboardData("이모지를 남기고\n푸시알림에\n생각을 표현해보세요", R.drawable.onboardimg),
-            OnboardData("이모지를 남기고\n푸시알림에\n생각을 표현해보세요", R.drawable.onboardimg),
+            OnboardData("하나의 파도엔 한 사람만!\n" +
+                    "가장 기본이 되는 서핑 룰이에요", R.drawable.onboard_img1),
+            OnboardData("파도가 좋을수록 암초가 많아요!\n" +
+                    "처음 가는 해변에서는 조심합시다", R.drawable.onboard_img2),
+            OnboardData("위험한 해양생물도 있어요!\n"+
+                    "출물지역과 시기를 확인해둡시다", R.drawable.onboard_img3),
         )
     )
 

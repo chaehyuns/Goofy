@@ -23,17 +23,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:itemIconSize="40dp"
+            android:background="#F2F3F7"
             app:itemIconTint="@drawable/btm_color_selector"
             app:itemTextColor="@drawable/btm_color_selector"
-            app:labelVisibilityMode="labeled"
+            app:labelVisibilityMode="unlabeled"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:menu="@menu/bottom_nav_menu" />
 
+
         <FrameLayout
             android:id="@+id/techCard_frm"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="350dp"
             android:layout_above="@+id/navigation_division"
             android:layout_below="@+id/toolbar_division" />
 

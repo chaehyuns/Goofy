@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home.lv1Fragment">
+    tools:context=".home.lv1Fragment"
+    android:background="#F2F3F7">
 
     <ScrollView
         android:id="@+id/bio_scroll"
@@ -19,54 +22,50 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:radius="20dp"
             android:padding="16dp">
 
             <ImageView
+                android:id="@+id/stance_button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/techcard"
+                android:src="@drawable/lv1_tc_01"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
                 />
 
             <ImageView
+                android:id="@+id/paddling_button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/techcard2"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/lv1_tc_02"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
                 />
             <ImageView
+                android:id="@+id/popup_button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/techcard"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/lv1_tc_03"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
                 />
             <ImageView
+                android:id="@+id/takeoff_button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/techcard"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/lv1_tc_04"
                 android:scaleType="fitXY"
                 android:adjustViewBounds="true"
                 />
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/techcard"
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"
-                />
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/techcard"
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"
-                />
+
         </LinearLayout>
 
     </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
